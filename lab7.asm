@@ -146,7 +146,7 @@ convert PROC
 		mov [edi + ecx], bl		;add edi + 3 to store the hexstring to the 3rd element and decrement edi until eax = 0 		
 		dec edi
 
-		test eax, 1			;test if eax is 0 
+		test eax, eax			;test if eax is 0 
 		jnz convertLoop
 
 	ret
